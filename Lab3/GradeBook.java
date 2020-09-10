@@ -85,12 +85,13 @@ public class GradeBook
    
    public String toString() {
 	   String str = "";
-		  for(int i = 0; i < scoresSize; i++)
-		  {
-			  str += scores[i] + " ";
-		  }
-		  
-		   return str;
+	   for(int i = 0; i < scoresSize; i++)
+	   {
+		   str += scores[i] + " ";
+	   }
+	   
+	   return str;
+	   
    }
    
    
