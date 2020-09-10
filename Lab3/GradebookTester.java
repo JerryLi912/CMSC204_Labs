@@ -28,25 +28,25 @@ public class GradebookTester {
 	}
 	
 	@Test
-	public void addScore() {
+	public void testAddScore() {
 		assertTrue(grade1.toString().equals("20.0 100.0 "));
 		assertTrue(grade2.toString().equals("80.0 30.0 100.0 "));
 		assertEquals(2, grade1.getScoreSize(), .0001);
 		assertEquals(3, grade2.getScoreSize(), .0001);
 	}
-	
-	public void sum() {
+	@Test
+	public void testSum() {
 		assertEquals(120, grade1.sum(), 0.0001);
 		assertEquals(210, grade2.sum(),0.0001);
 	}
-	
-	public void minimum() {
+	@Test
+	public void testMinimum() {
 		
 		assertEquals(20, grade1.minimum(), 0.0001);
 		assertEquals(30, grade2.minimum(), 0.0001);
 	}
-	
-	public void finalScore() {
+	@Test
+	public void testFinalScore() {
 		assertEquals(100, grade1.finalScore(), 0.0001);
 		assertEquals(180, grade2.finalScore(), 0.0001);
 		
